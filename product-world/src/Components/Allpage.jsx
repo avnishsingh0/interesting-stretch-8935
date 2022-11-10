@@ -13,8 +13,10 @@ import Home from "./Allpages/Home";
 import Beauty from "./Allpages/Beauty";
 import Designer from "./Allpages/Designer";
 import Threads from "./Allpages/Threads";
-
-
+import ErrorPage from "./ErrorPage";
+import Footer from "./Footer/Footer";
+import Woman1 from "./SecondRouter/Woman1";
+import SingleProduct from "./Allpages/SingleProduct";
 const AllPage = () =>{
     return (
         <>
@@ -27,14 +29,15 @@ const AllPage = () =>{
       
       <Route path="holidayDeals" element={<HolidayDeals/>}>
       
-          <Route path="women" element={<h1>Featured</h1>}/>
-          <Route path="men" element={<h1>men</h1>} />
-          <Route path="designer" element={<h1>designer</h1>} />
-          <Route path="kids" element={<h1>kids</h1>} />
-          <Route path="beauty" element={<h1>beauty</h1>} />
-          <Route path="home" element={<h1>home</h1>}/>
+          <Route path="women1" element={<Woman1/>}/>
+          <Route path="men1" element={<h1>men</h1>} />
+          <Route path="designer1" element={<h1>designer</h1>} />
+          <Route path="kids1" element={<h1>kids</h1>} />
+          <Route path="beauty1" element={<h1>beauty</h1>} />
+          <Route path="home1" element={<h1>home</h1>}/>
       </Route>
       <Route path="/women" element={<Women/>}/>
+      <Route path="/singleproduct/:id" element={<SingleProduct/>}/>
       <Route path="/men" element={<Men/>}/>
       <Route path="/kids" element={<Kids/>}/>
       <Route path="/youngAdult" element={<Young/>}/>
@@ -43,8 +46,10 @@ const AllPage = () =>{
       <Route path="/Beauty" element={<Beauty/>}/>
       <Route path="/Designer" element={<Designer/>}/>
       <Route path="/theThread" element={<Threads/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
     </Routes>
     </div>
+    <Footer/>
         </>
     )
 }

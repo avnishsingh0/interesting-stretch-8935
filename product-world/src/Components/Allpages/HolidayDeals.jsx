@@ -1,5 +1,6 @@
 import React  from "react";
 import './HolidayDeals.css'
+import Woman1 from "../SecondRouter/Woman1";
 import { Link, Switch, Route, useRouteMatch, Outlet } from "react-router-dom";
 const HolidayDeals = () =>{
     return (
@@ -25,17 +26,20 @@ const HolidayDeals = () =>{
                 <div>
                     <img src="https://www.bing.com/images/blob?bcid=S-Hpz8D2Zt0E0A"/>
                 </div>
+                
 
                 
             </div>
+            <h1 className="imgund">Deals You’ll Love</h1>
             
-            <nav>
-            <Link to="women">Women</Link>
-            <Link to="men">Men</Link>
-            <Link to="designer">Designer</Link>
-            <Link to="kids">Kids</Link>
-            <Link to="beauty">Beauty</Link>
-            <Link to="home">Home</Link>
+            <nav className="nabarlink">
+            
+            <Link to="women1">Woman</Link>
+            <Link to="men1">Men</Link>
+            <Link to="designer1">Designer</Link>
+            <Link to="kids1">Kids</Link>
+            <Link to="beauty1">Beauty</Link>
+            <Link to="home1">Home</Link>
             </nav>
             <Outlet />
         </>

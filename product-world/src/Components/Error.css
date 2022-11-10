@@ -1,0 +1,20 @@
+.container{
+    padding: 9rem 0;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    margin: 2rem 0;
+}
+button{
+    width: 190px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

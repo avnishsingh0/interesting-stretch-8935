@@ -1,0 +1,43 @@
+.uprdiv{
+    border: 0px solid red;
+    height: 60px;
+    display: flex;
+    margin-top: 70px;
+}
+.uprdiv>div>img{
+    width: 75%;
+    margin-top: 15px;
+}
+.uprdiv>div>h1{
+    font-size: 20px;
+    width: 110%;
+    
+}
+.uprimg{
+    width: 30%;
+    border: 0px solid red;
+    margin-left: 250px;
+}
+.uprimg>img{
+    margin-left: 100px;
+}
+.uprimg1{
+    width: 100%;
+}
+.imgflex{
+    display: grid;
+    display: flex;
+    margin: auto;
+    /* gap: 40px; */
+    /* margin-left: 80px; */
+    /* width: 100%; */
+    border: 0px solid red;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.imgflex>div{
+    width: 50%;
+}
+.imgflex>div>img{
+    width: 90%;
+}

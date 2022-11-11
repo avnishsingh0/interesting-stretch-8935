@@ -41,3 +41,16 @@
 .imgflex>div>img{
     width: 90%;
 }
+.imgund{
+    text-align: left;
+    margin-left: 40px;
+}
+.nabarlink{
+    display: grid;
+    display: flex;
+    border: 0px solid red;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: sans-serif;
+}

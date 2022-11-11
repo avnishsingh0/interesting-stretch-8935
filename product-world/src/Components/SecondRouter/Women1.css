@@ -1,0 +1,20 @@
+.menS{
+    border: 1px solid red;
+    height: 570px;
+    display: grid;
+    display: flex;
+    gap: 1%;
+    margin-top: 10px;
+    margin: auto;
+    
+}
+.menS1{
+    border: 1px solid blue;
+    height: 570px;
+    width: 250px;
+    margin: auto;
+}
+.imgS{
+    width: 250px;
+
+}

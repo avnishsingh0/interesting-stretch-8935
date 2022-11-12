@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import axios from "axios";
-import reducer from "../Reducer/MensReducer";
-import reducer1 from '../Reducer/WomensReducer'
+import reducer from "../Reducer/WomensReducer";
 
 const AppContext = createContext();
 const API = "http://localhost:3001/prduct";
@@ -9,15 +8,20 @@ const API = "http://localhost:3001/prduct";
 const initialState = {
     isLoading: false,
     isError: false,
-    products: [],
+    products: [], 
     womenDetails: [],
     isSingleLoading: false,
     singleProduct: {},
   };
   
-  const AppProvider1 = ({ children }) => {
+
+
+
+  const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-  
+    
+
+
     const getProducts = async (url) => {
         dispatch({ type: "SET_LOADING" });
         try {
@@ -53,4 +57,4 @@ const initialState = {
 const useProductsContext = () =>{
     return useContext(AppContext)
 }
-export {AppProvider1, AppContext,useProductsContext};
+export {AppProvider, AppContext,useProductsContext};

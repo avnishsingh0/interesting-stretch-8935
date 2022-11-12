@@ -1,0 +1,32 @@
+.singlePageflex{
+    border: 0px solid red;
+    display: flex;
+    /* height: 800px; */
+    margin-top: 10px;
+}
+.singlePageflex>div{
+    border: 0px solid blue;
+    
+    margin: auto;
+    width: 50%;
+    /* display: flex; */
+    /* height: 800px; */
+}
+.box-image--style{
+    height: 350px;
+    width: 350px;
+    margin-left: -70%;
+}
+.main-screen{
+    width: 50%;
+    border: 0px solid red;
+    margin: auto;
+    margin-left: 350px;
+    margin-top: -600px;
+}
+.imgSide{
+    width: 100%;
+    /* margin-left: 500px; */
+    /* margin-top: -1500px; */
+   
+}

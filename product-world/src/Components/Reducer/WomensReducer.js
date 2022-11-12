@@ -8,7 +8,7 @@ const WomensReducer = (state, action) =>{
 
     case "SET_API_DATA":
       const womanData = action.payload.filter((curElem) => {
-        return curElem.women === true
+        return curElem.omen === true
         
         
         

@@ -12,7 +12,7 @@ const ErrorPage = () => {
                 is a mystery. But you can click the button below to go back to the homepage.</p>
             </div>
             <NavLink to={"/holidayDeals"}>
-            <button>Go to Home</button>
+            <button className='errorBtn'>Go to Home</button>
             </NavLink>
             
         </div>

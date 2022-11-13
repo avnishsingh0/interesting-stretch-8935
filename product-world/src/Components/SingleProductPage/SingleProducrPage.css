@@ -5,12 +5,21 @@
     margin-top: 10px;
 }
 .singlePageflex>div{
-    border: 0px solid blue;
+    border: 1px solid blue;
     
     margin: auto;
-    width: 50%;
+    /* width: 50%; */
     /* display: flex; */
-    /* height: 800px; */
+    height: 800px;
+    
+}
+.singlePageflex>div:nth-child(2){
+    /* background-color: aqua; */
+    text-align: justify;
+    padding-left: 60px;
+    width: 60%;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 .box-image--style{
     height: 350px;
@@ -29,4 +38,31 @@
     /* margin-left: 500px; */
     /* margin-top: -1500px; */
    
+}
+.name{
+     font-size: 22px;
+}
+.company{
+    margin-top: -22px;
+    font-size: 17px;
+
+}
+.price{
+    color: red;
+    font-size: 22px;
+}
+.price1{
+    margin-top: -22px;
+    
+}
+.price2{
+    margin-top: -22px;
+    
+}
+.offer{
+    margin-top: -22px;
+    color: red;
+}
+.description{
+    width: 95%;
 }

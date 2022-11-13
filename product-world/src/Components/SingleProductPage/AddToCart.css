@@ -1,0 +1,58 @@
+.colors p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .btnStyle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .btnStyle:hover {
+    opacity: 1;
+  }
+  .active {
+    opacity: 1;
+  }
+  .checkStyle {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .amount-toggle {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.5rem;
+    border: 0px solid red;
+    width: 30%;
+    /* margin-left: 30px; */
+  }
+ .btnamt {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .amount-style {
+    font-size: 1.4rem;
+    border: 0px solid red;
+    width: 60px;
+    height: 25px;
+    padding: 5px;
+    font-weight: bold;
+    /* padding-left: 20px; */
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+  }

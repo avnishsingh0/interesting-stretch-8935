@@ -1,16 +1,29 @@
 import React, { useEffect,useState } from 'react'
 import {NavLink, useParams} from 'react-router-dom'
 import {useProductsContext} from "../Context/ProductContext"
+import AddToCart from './AddToCart'
 import './SingleProducrPage.css'
+
+
+
 const API = "http://localhost:3001/prduct"
 
 
-const SingleProductPage = ({ imgs = [{ imgs: "" }] }) => {
-  const [mainImage, setMainImage] = useState(imgs[0]);
-  const {isLoading}= useProductsContext();
-  const { getSingleProduct, isSingleLoading, singleProduct }=useProductsContext();
+const SingleProductPage = () => {
+  // const [mainImage, setMainImage] = useState(imgs[0]);
+  const { getSingleProduct, isSingleLoading, singleProduct}=useProductsContext();
    console.log(singleProduct[0]   )
+  //  console.log(getSingleProduct)
   const {id} = useParams();
+  
+  // const {
+  //   id: alias,
+  //   name,
+  //   image
+  // }= singleProduct[0]
+
+
+
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`);
   }, []);
@@ -19,8 +32,8 @@ const SingleProductPage = ({ imgs = [{ imgs: "" }] }) => {
     <div>
     {/* <NavLink to="/">Home</NavLink> */}
     {/* <h1>SingleProductPage</h1> */}
-    {/* <h1>{singleProduct[0].name}</h1>
-    <img src={singleProduct[0].image}/> */}
+    {/* <h1>{name}</h1> */}
+    {/* <img src={image}/> */}
     {/* <p> */}
     {/* Available: */}
     {/* <span> */}
@@ -39,7 +52,7 @@ const SingleProductPage = ({ imgs = [{ imgs: "" }] }) => {
                 // alt={curElm}
                 className="box-image--style"
                 key={index}
-                onClick={() => setMainImage(curElm)}
+                // onClick={() => setMainImage(curElm)}
               />
             </figure>
             
@@ -51,15 +64,19 @@ const SingleProductPage = ({ imgs = [{ imgs: "" }] }) => {
          </div>
 </div>
       <div>
-      <p>{singleProduct[0].name}</p>
-      <p>{singleProduct[0].company}</p>
-      <h4>{singleProduct[0].price}</h4>
+      <p className='name'>{singleProduct[0].name}</p>
+      <p className='company'>{singleProduct[0].company}</p>
+      <h4 className='price'>{singleProduct[0].price}</h4>
       <del>
-      <p>{singleProduct[0].price1}</p>
-      <p>{singleProduct[0].price2}</p>
+      <p className='price1'>{singleProduct[0].price1} </p>
+      <p className='price2'>{singleProduct[0].price2}</p>
       </del>
-      <h4>{singleProduct[0].offer}</h4>
-      <p>{singleProduct[0].description}</p>
+      <h4 className='offer'>{singleProduct[0].offer}</h4>
+      <p className='description'>{singleProduct[0].description}</p>
+
+      {
+        singleProduct[0].stock>0 && <AddToCart product={singleProduct[0]}/>
+      }
       </div>
     </div>
     </div>

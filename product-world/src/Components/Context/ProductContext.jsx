@@ -4,7 +4,7 @@ import reducer from "../Reducer/MensReducer";
 import reducer1 from '../Reducer/WomensReducer'
 
 const AppContext = createContext();
-const API = "http://localhost:3001/prduct";
+const API = "https://nordstrom1.onrender.com/api/prduct";
 
 const initialState = {
     isLoading: false,

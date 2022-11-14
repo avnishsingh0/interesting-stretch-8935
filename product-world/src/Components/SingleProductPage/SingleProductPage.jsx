@@ -4,7 +4,7 @@ import { useProductsContext } from "../Context/ProductContext";
 import AddToCart from "./AddToCart";
 import "./SingleProducrPage.css";
 
-const API = "http://localhost:3001/prduct";
+const API = "https://nordstrom1.onrender.com/api/prduct";
 
 const SingleProductPage = () => {
   // const [mainImage, setMainImage] = useState(imgs[0]);

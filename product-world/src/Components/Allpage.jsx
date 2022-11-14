@@ -16,29 +16,33 @@ import Threads from "./Allpages/Threads";
 import ErrorPage from "./ErrorPage";
 import Footer from "./Footer/Footer";
 import Woman1 from "./SecondRouter/Woman1";
-import { AppProvider1 } from "./Context/ProductContext";
+import { AppProvider } from "./Context/ProductContext";
 import SingleProductPage from './SingleProductPage/SingleProductPage';
 import Men1 from "./SecondRouter/Men1";
+import CartDetails from "./SingleProductPage/CartDetails";
+// import cartReducer from "./Reducer/CartReducer";
+import { CartProvider } from "./Context/CartContext";
+import CartReducer from "./Reducer/CartReducer";
 const AllPage = () =>{
     return (
         <>
     <div>
       <Navbar/>
       <NavRouter/>
-      <AppProvider1>
+      <AppProvider>
+      <CartProvider>
       <Routes>
       <Route path="/" element={<HolidayGifts/>}/>
       
       <Route path="holidayDeals" element={<HolidayDeals/>}>
         
           <Route path="women1" element={<Woman1/>}/>
-        
-
           <Route path="men1" element={<Men1/>} />
-          <Route path="designer1" element={<h1>designer</h1>} />
-          <Route path="kids1" element={<h1>kids</h1>} />
-          <Route path="beauty1" element={<h1>beauty</h1>} />
+          <Route path="designer1" element={<h1>designer</h1>}/>
+          <Route path="kids1" element={<h1>kids</h1>}/>
+          <Route path="beauty1" element={<h1>beauty</h1>}/>
           <Route path="home1" element={<h1>home</h1>}/>
+          
           
       </Route>
       
@@ -53,8 +57,11 @@ const AllPage = () =>{
       <Route path="/Designer" element={<Designer/>}/>
       <Route path="/theThread" element={<Threads/>}/>
       <Route path="*" element={<ErrorPage/>}/>
+      <Route path="/cart" element={<CartReducer/>}/>
+      
     </Routes>
-    </AppProvider1>
+    </CartProvider>
+    </AppProvider>
     </div>
     <Footer/>
         </>

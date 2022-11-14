@@ -15,7 +15,7 @@ const initialState = {
     singleProduct: {},
   };
   
-  const AppProvider1 = ({ children }) => {
+  const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
   
     const getProducts = async (url) => {
@@ -53,4 +53,4 @@ const initialState = {
 const useProductsContext = () =>{
     return useContext(AppContext)
 }
-export {AppProvider1, AppContext,useProductsContext};
+export {AppProvider, AppContext,useProductsContext};

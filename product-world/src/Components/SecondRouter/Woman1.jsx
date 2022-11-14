@@ -37,11 +37,11 @@ if(isLoading){
             <h4 className='h4c'>{curElem.price}</h4>
             <p>{curElem.price1}</p>
             <p>{curElem.price2}</p>
-            <span class={curElem.reting}></span>
-            <span class={curElem.reting}></span>
-            <span class={curElem.reting}></span>
-            <span class={curElem.reting}></span>
-            <span class={curElem.reting}></span>
+            <span className={curElem.reting}></span>
+            <span className={curElem.reting}></span>
+            <span className={curElem.reting}></span>
+            <span className={curElem.reting}></span>
+            <span className={curElem.reting}></span>
 
           </NavLink>
           </div>
